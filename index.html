@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chuchay ♡ — Play · Chill · Be Happy</title>
+  <meta name="description" content="Welcome to Chuchay's cozy corner! Roblox gamer, TikTok creator, and boba tea lover. Small steps, big dreams! 🧋✨" />
+  <meta name="keywords" content="Chuchay, Roblox, TikTok, pearlinobaya_, Grow a Garden, gaming, kawaii" />
+  <meta name="theme-color" content="#d6e6f5" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧋</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-boba">🧋</div>
+    <div class="loading-text">
+      Loading Chuchay's world
+      <span class="loading-dots">
+        <span>.</span><span>.</span><span>.</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Background Pattern -->
+  <div class="bg-pattern"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles-container" id="particles"></div>
+
+  <!-- Main Content -->
+  <div class="main-container">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero animate-in" id="hero">
+      <div class="hero-avatar-wrapper">
+        <span class="crown-icon">👑</span>
+        <img 
+          src="assets/chuchay_avatar.jpg" 
+          alt="Chuchay's avatar — a cute anime girl with blonde hair and a red beret" 
+          class="hero-avatar"
+          id="heroAvatar"
+        />
+      </div>
+      <h1 class="hero-name">Chuchay</h1>
+      <p class="hero-subtitle">Roblox · TikTok 🧋</p>
+      <div class="hero-tagline">
+        <span>Play</span>
+        <span class="dot"></span>
+        <span>Chill</span>
+        <span class="dot"></span>
+        <span>Be Happy ♡</span>
+      </div>
+      <div class="motto-banner" id="mottoBanner">
+        ✨ Small Steps, Big Dreams ✨
+      </div>
+    </section>
+
+    <!-- ===== SOCIAL CARDS SECTION ===== -->
+    <section class="social-section" id="socials">
+      <h2 class="section-title">
+        <span class="emoji">🎮</span>
+        Find Me Here
+        <span class="emoji">📱</span>
+      </h2>
+      <div class="social-cards">
+
+        <!-- Roblox Card -->
+        <a href="https://www.roblox.com/users/8273590393/profile?friendshipSourceType=PlayerSearch" target="_blank" rel="noopener noreferrer" class="social-card social-card--roblox animate-in" id="robloxCard">
+          <img src="assets/roblox_avatar.png" alt="Chuchay's Roblox avatar" class="social-card__avatar" />
+          <div class="social-card__info">
+            <div class="social-card__platform">
+              <span class="social-card__platform-icon">🎮</span>
+              <span class="social-card__platform-name">ROBLOX</span>
+            </div>
+            <div class="social-card__detail">
+              <span class="label">Username:</span>
+              <span class="value">pearlinobaya_</span>
+            </div>
+            <div class="social-card__detail">
+              <span class="emoji-small">⭐</span>
+              <span class="label">Main Game:</span>
+              <span class="value">Grow a Garden 🌱</span>
+            </div>
+          </div>
+          <span class="social-card__arrow">→</span>
+        </a>
+
+        <!-- TikTok Card -->
+        <a href="https://www.tiktok.com/@pearlinobaya_" target="_blank" rel="noopener noreferrer" class="social-card social-card--tiktok animate-in" id="tiktokCard">
+          <img src="assets/tiktok_avatar.png" alt="Chuchay's TikTok avatar" class="social-card__avatar" />
+          <div class="social-card__info">
+            <div class="social-card__platform">
+              <span class="social-card__platform-icon">🎵</span>
+              <span class="social-card__platform-name">TikTok</span>
+            </div>
+            <div class="social-card__detail">
+              <span class="label">Account:</span>
+              <span class="value">@pearlinobaya_ ♡</span>
+            </div>
+            <div class="social-card__detail">
+              <span class="emoji-small">✨</span>
+              <span class="label">Content:</span>
+              <span class="value">Gaming & Fun Vibes</span>
+            </div>
+          </div>
+          <span class="social-card__arrow">→</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section animate-in" id="about">
+      <h2 class="section-title">
+        <span class="emoji">🌸</span>
+        About Me
+        <span class="emoji">🌸</span>
+      </h2>
+      <div class="about-card">
+        <p>
+          Hey there! I'm <span class="highlight">Chuchay</span> 💕<br /><br />
+          I love playing <span class="highlight">Roblox</span> — especially
+          <span class="highlight">Grow a Garden</span> 🌱 — and making fun content
+          on <span class="highlight">TikTok</span>! When I'm not gaming, you'll
+          probably find me sipping <span class="highlight">boba tea</span> 🧋 and
+          vibing to good music.<br /><br />
+          Same girl... different game 🎮💙
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== INTERESTS ===== -->
+    <section class="interests-section animate-in" id="interests">
+      <h2 class="section-title">
+        <span class="emoji">💖</span>
+        Things I Love
+        <span class="emoji">💖</span>
+      </h2>
+      <div class="interests-grid">
+        <div class="interest-card" id="interestGaming">
+          <span class="interest-card__icon">🎮</span>
+          <h3 class="interest-card__title">Gaming</h3>
+          <p class="interest-card__desc">Roblox all day!</p>
+        </div>
+        <div class="interest-card" id="interestBoba">
+          <span class="interest-card__icon">🧋</span>
+          <h3 class="interest-card__title">Boba Tea</h3>
+          <p class="interest-card__desc">Always boba time</p>
+        </div>
+        <div class="interest-card" id="interestMusic">
+          <span class="interest-card__icon">🎵</span>
+          <h3 class="interest-card__title">Music</h3>
+          <p class="interest-card__desc">Chill beats & vibes</p>
+        </div>
+        <div class="interest-card" id="interestCreating">
+          <span class="interest-card__icon">✨</span>
+          <h3 class="interest-card__title">Creating</h3>
+          <p class="interest-card__desc">TikTok content</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUOTE ===== -->
+    <section class="quote-section animate-in" id="quote">
+      <div class="quote-card">
+        <span class="quote-card__deco quote-card__deco--tl">🌟</span>
+        <p class="quote-card__text">
+          "Same girl... Different game"
+        </p>
+        <p class="quote-card__subtitle">— Chuchay 🎮💙</p>
+        <span class="quote-card__deco quote-card__deco--br">💫</span>
+      </div>
+    </section>
+
+    <!-- ===== FOLLOW ME ===== -->
+    <section class="follow-section animate-in" id="follow">
+      <div class="follow-card">
+        <h2 class="follow-card__title">Follow Me! 💕</h2>
+        <p class="follow-card__subtitle">Let's be friends and play together!</p>
+        <div class="follow-buttons">
+          <a href="https://www.roblox.com/users/8273590393/profile?friendshipSourceType=PlayerSearch" target="_blank" rel="noopener noreferrer" class="follow-btn follow-btn--roblox" id="followRoblox">
+            <span class="follow-btn__icon">🎮</span>
+            <span class="follow-btn__text">Add on Roblox</span>
+          </a>
+          <a href="https://www.tiktok.com/@pearlinobaya_" target="_blank" rel="noopener noreferrer" class="follow-btn follow-btn--tiktok" id="followTiktok">
+            <span class="follow-btn__icon">🎵</span>
+            <span class="follow-btn__text">Follow on TikTok</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+      <div class="footer__hearts">💙🤍💜</div>
+      <p>Made with love by Chuchay ♡ 2026</p>
+      <p>Play · Chill · Be Happy 🧋</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
