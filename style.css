@@ -413,6 +413,25 @@ body {
   font-size: 1.05rem;
   line-height: 1.8;
   color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.about-card__greeting {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+.about-card__outro {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.25rem;
+  color: var(--text-accent);
+  margin-top: 20px;
 }
 
 .about-card .highlight {
