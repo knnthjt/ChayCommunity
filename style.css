@@ -673,6 +673,17 @@ body {
   text-decoration: none;
 }
 
+.footer p {
+  margin-bottom: 4px;
+}
+
+.footer__copyright {
+  margin-top: 12px;
+  font-size: 0.78rem;
+  opacity: 0.75;
+  letter-spacing: 0.3px;
+}
+
 /* ===== SCROLL ANIMATIONS ===== */
 .animate-in {
   opacity: 0;
