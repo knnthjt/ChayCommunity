@@ -16,6 +16,14 @@
 
 <body>
 
+  <!-- Floating Controls -->
+  <aside class="floating-controls" aria-label="Page controls">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle Cozy Dark / Pastel Day">
+      <span class="theme-toggle__icon" id="themeToggleIcon">🌙</span>
+      <span class="theme-toggle__text" id="themeToggleText">Cozy Dark</span>
+    </button>
+  </aside>
+
   <!-- Loading Screen -->
   <div class="loading-screen" id="loadingScreen">
     <div class="loading-boba">🧋</div>
@@ -69,11 +77,15 @@
         <!-- Roblox Card -->
         <a href="https://www.roblox.com/users/8273590393/profile?friendshipSourceType=PlayerSearch" target="_blank"
           rel="noopener noreferrer" class="social-card social-card--roblox animate-in" id="robloxCard">
-          <img src="assets/roblox_avatar.png" alt="Chuchay's Roblox avatar" class="social-card__avatar" />
+          <div class="social-card__avatar-wrap">
+            <img src="assets/roblox_avatar.png" alt="Chuchay's Roblox avatar" class="social-card__avatar" />
+            <span class="social-card__badge-icon">🎮</span>
+          </div>
           <div class="social-card__info">
             <div class="social-card__platform">
               <span class="social-card__platform-icon">🎮</span>
               <span class="social-card__platform-name">ROBLOX</span>
+              <span class="pill-badge pill-badge--roblox">Gamer</span>
             </div>
             <div class="social-card__detail">
               <span class="label">Username:</span>
@@ -91,11 +103,15 @@
         <!-- TikTok Card -->
         <a href="https://www.tiktok.com/@pearlinobaya_" target="_blank" rel="noopener noreferrer"
           class="social-card social-card--tiktok animate-in" id="tiktokCard">
-          <img src="assets/tiktok_avatar.png" alt="Chuchay's TikTok avatar" class="social-card__avatar" />
+          <div class="social-card__avatar-wrap">
+            <img src="assets/tiktok_avatar.png" alt="Chuchay's TikTok avatar" class="social-card__avatar" />
+            <span class="social-card__badge-icon">🎵</span>
+          </div>
           <div class="social-card__info">
             <div class="social-card__platform">
               <span class="social-card__platform-icon">🎵</span>
               <span class="social-card__platform-name">TikTok</span>
+              <span class="pill-badge pill-badge--tiktok">Creator</span>
             </div>
             <div class="social-card__detail">
               <span class="label">Account:</span>
@@ -105,6 +121,32 @@
               <span class="emoji-small">✨</span>
               <span class="label">Content:</span>
               <span class="value">Gaming & Fun Vibes</span>
+            </div>
+          </div>
+          <span class="social-card__arrow">→</span>
+        </a>
+
+        <!-- TikTok Group Invitation Card -->
+        <a href="https://tiktok.me/group/ZSqgSA3mt/" target="_blank" rel="noopener noreferrer"
+          class="social-card social-card--tiktok-group animate-in" id="tiktokGroupCard">
+          <div class="social-card__avatar-wrap">
+            <img src="assets/tiktok_avatar.png" alt="Chuchay's TikTok Community Group" class="social-card__avatar" />
+            <span class="social-card__badge-icon">👥</span>
+          </div>
+          <div class="social-card__info">
+            <div class="social-card__platform">
+              <span class="social-card__platform-icon">💬</span>
+              <span class="social-card__platform-name">TikTok Group</span>
+              <span class="pill-badge pill-badge--group">Community</span>
+            </div>
+            <div class="social-card__detail">
+              <span class="label">Invitation:</span>
+              <span class="value">Join Chuchay's Group ♡</span>
+            </div>
+            <div class="social-card__detail">
+              <span class="emoji-small">🧋</span>
+              <span class="label">Vibes:</span>
+              <span class="value">Community chat, updates & hangout!</span>
             </div>
           </div>
           <span class="social-card__arrow">→</span>
@@ -197,6 +239,11 @@
             <span class="follow-btn__icon">🎵</span>
             <span class="follow-btn__text">Follow on TikTok</span>
           </a>
+          <a href="https://tiktok.me/group/ZSqgSA3mt/" target="_blank" rel="noopener noreferrer"
+            class="follow-btn follow-btn--tiktok-group" id="followTiktokGroup">
+            <span class="follow-btn__icon">👥</span>
+            <span class="follow-btn__text">Join TikTok Group</span>
+          </a>
         </div>
       </div>
     </section>
@@ -204,12 +251,93 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer" id="footer">
       <div class="footer__hearts">💙🤍💜</div>
-      <p>Made with love by Chuchay ♡ 2026</p>
+      <p>Specially Made with love for Chuchay ♡ 2026</p>
       <p>Play · Chill · Be Happy 🧋</p>
-      <p class="footer__copyright">© 2026 ChayCommunity · All Rights Reserved. Made by Toarawr</p>
+      <p class="footer__copyright">© 2026 ChayCommunity · All Rights Reserved · Made by Toarawr</p>
     </footer>
 
   </div>
+
+  <!-- ===== FLOATING LO-FI MUSIC PLAYER ===== -->
+  <aside class="lofi-player" id="lofiPlayer" aria-label="Lo-Fi Music Player">
+    <!-- Compact Pill (Always Visible / Expandable) -->
+    <div class="lofi-player__compact" id="lofiCompact">
+      <div class="lofi-player__disc" id="lofiDisc" title="Click to expand music player">
+        <span class="disc-art">🧋</span>
+        <div class="disc-groove"></div>
+      </div>
+      <div class="lofi-player__meta" id="lofiMetaToggle" title="Click to expand music player">
+        <span class="lofi-player__track-name" id="compactTrackName">Cozy Lo-Fi Beats</span>
+        <div class="lofi-player__eq" id="lofiEq">
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+        </div>
+      </div>
+      <button class="lofi-btn lofi-btn--play" id="compactPlayBtn" aria-label="Play or Pause Lo-Fi Music" title="Play / Pause">
+        <span class="play-icon" id="compactPlayIcon">▶</span>
+      </button>
+      <button class="lofi-btn lofi-btn--toggle" id="expandPlayerBtn" aria-label="Expand player controls" title="Toggle Controls">
+        <span class="toggle-icon" id="expandIcon">▲</span>
+      </button>
+    </div>
+
+    <!-- Expanded Controls Card -->
+    <div class="lofi-player__expanded" id="lofiExpanded" aria-hidden="true">
+      <div class="lofi-card-header">
+        <div class="lofi-badge">
+          <span class="live-dot" id="liveDot"></span>
+          <span id="lofiStatusText">Lo-Fi Radio</span>
+        </div>
+        <button class="lofi-btn lofi-btn--close" id="closeExpandedBtn" aria-label="Minimize player" title="Minimize">
+          <span>▼</span>
+        </button>
+      </div>
+
+      <div class="lofi-current-track">
+        <div class="lofi-vinyl-wrap">
+          <div class="lofi-vinyl" id="mainVinyl">
+            <span class="vinyl-center">🎧</span>
+          </div>
+        </div>
+        <div class="lofi-track-details">
+          <p class="track-title" id="expandedTrackTitle">Chillhop Cozy Radio</p>
+          <p class="track-sub" id="expandedTrackSub">Play · Chill · Obby Vibes 🧋</p>
+        </div>
+      </div>
+
+      <!-- Controls row -->
+      <div class="lofi-controls">
+        <button class="lofi-ctrl-btn" id="prevTrackBtn" aria-label="Previous station" title="Previous Station">
+          ⏮
+        </button>
+        <button class="lofi-ctrl-btn lofi-ctrl-btn--main" id="mainPlayBtn" aria-label="Play or Pause" title="Play / Pause">
+          <span id="mainPlayIcon">▶</span>
+        </button>
+        <button class="lofi-ctrl-btn" id="nextTrackBtn" aria-label="Next station" title="Next Station">
+          ⏭
+        </button>
+      </div>
+
+      <!-- Volume control -->
+      <div class="lofi-volume-wrap">
+        <button class="lofi-vol-icon-btn" id="volMuteBtn" aria-label="Mute / Unmute" title="Mute / Unmute">
+          <span id="volIcon">🔊</span>
+        </button>
+        <input type="range" class="lofi-vol-slider" id="lofiVolSlider" min="0" max="100" value="70" aria-label="Volume slider" />
+        <span class="lofi-vol-val" id="volValText">70%</span>
+      </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="lofiAudio" preload="none"></audio>
+  </aside>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top" title="Back to top">
+    <span class="back-to-top__icon">🌸</span>
+  </button>
 
   <script src="script.js"></script>
 </body>
