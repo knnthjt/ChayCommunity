@@ -413,6 +413,20 @@ body.dark-theme .social-card--tiktok-group {
   box-shadow: 0 14px 44px rgba(184, 181, 232, 0.35);
 }
 
+.social-card--discord {
+  border-left: 4px solid #5865f2;
+  background: linear-gradient(135deg, var(--card-bg), rgba(88, 101, 242, 0.15));
+}
+
+body.dark-theme .social-card--discord {
+  background: linear-gradient(135deg, var(--card-bg), rgba(88, 101, 242, 0.1));
+}
+
+.social-card--discord:hover {
+  border-color: #5865f2;
+  box-shadow: 0 14px 44px rgba(88, 101, 242, 0.35);
+}
+
 /* Avatar Wrap & Badges */
 .social-card__avatar-wrap {
   position: relative;
@@ -526,6 +540,12 @@ body.dark-theme .social-card__avatar {
   animation: badgeGlow 2.5s ease-in-out infinite;
 }
 
+.pill-badge--discord {
+  background: rgba(88, 101, 242, 0.22);
+  color: #5865f2;
+  border: 1px solid rgba(88, 101, 242, 0.45);
+}
+
 @keyframes badgeGlow {
   0%, 100% { box-shadow: 0 0 0 rgba(184, 181, 232, 0); }
   50% { box-shadow: 0 0 10px rgba(184, 181, 232, 0.45); }
@@ -547,6 +567,12 @@ body.dark-theme .pill-badge--group {
   background: rgba(184, 181, 232, 0.2);
   color: #d2cefc;
   border-color: rgba(184, 181, 232, 0.35);
+}
+
+body.dark-theme .pill-badge--discord {
+  background: rgba(88, 101, 242, 0.2);
+  color: #9aa4fc;
+  border-color: rgba(88, 101, 242, 0.35);
 }
 
 .social-card__detail {
@@ -897,6 +923,16 @@ body.dark-theme .pill-badge--group {
 .follow-btn--tiktok-group:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 8px 30px rgba(116, 82, 232, 0.5);
+}
+
+.follow-btn--discord {
+  background: linear-gradient(135deg, #5865f2, #7289da, #8a9ff5);
+  box-shadow: 0 4px 20px rgba(88, 101, 242, 0.35);
+}
+
+.follow-btn--discord:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(88, 101, 242, 0.5);
 }
 
 .follow-btn__icon {
